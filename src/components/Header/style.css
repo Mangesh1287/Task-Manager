@@ -1,0 +1,75 @@
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header img{
+  max-height: 24px;
+}
+
+header .user, header .notifications {
+  display: flex;
+  position: relative;
+}
+
+header .user{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+header .user img{
+  margin: 0 11px 0 0;
+}
+
+header .notifications .count{
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #FFF;
+  border: solid 4px #282c34;
+  border-radius: 50%;
+  background-color: #EB2235;
+}
+
+header .notifications .count + img{
+  margin-right: 18px;
+}
+
+header .notifications .left-arrow{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -17px;
+  top: 5px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid #FFF;
+}
+
+header .notifications .left-arrow:after{
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 4px;
+  border: none;
+  background: #FFF;
+  right: -14px;
+  top: -2px;
+}
+
+header .notifications .left-arrow + img {
+  max-height: 26px;
+  margin-bottom: -2px;
+}
+
+header{
+  margin: 0 0 20px;
+}
